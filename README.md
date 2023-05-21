@@ -1,6 +1,7 @@
 # Pokelist
 
 This project of Pokemon from PokeAPI, contains a paginated list, and individual data of each pokemon. Everything is saved in a context. Plus a 404 redirect page. The project uses components from the P-lib library (https://github.com/feer10/p-lib).
+
 You can go to a specific number of pokemon in the url and that page will be registered, for example: ```/pokemon/599```
 
 The project has Eslint + prettier, Stylelint, tests with Vitest + React testing library, a tour with Cypress. Plus all of this runs on pre-commit with Husky.
