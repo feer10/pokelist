@@ -65,7 +65,7 @@
     "**/*.{css,scss}": [
       "stylelint --no-fix"
     ],
-    "**/*.cy.{ts}": [
+    "**/*.cy.ts": [
       "yarn cypress:run"
     ]
   }
