@@ -29,7 +29,7 @@ const PokemonDetail: FC = () => {
         Back to list
       </Button>
       {currentPokemon && Object.keys(currentPokemon).length > 0 ? (
-        <>
+        <div className="pokemon-detail-wrapper">
           <PokemonDetailWrapper
             name={currentPokemon.name}
             id={currentPokemon.id}
@@ -42,11 +42,11 @@ const PokemonDetail: FC = () => {
             species={currentPokemon.species}
             weight={currentPokemon.weight}
           />
-          <div className="table-wrapper">
+          <div className="pokemon-detail-wrapper__table-wrapper">
             <h3>Stats:</h3>
             <Table data={currentPokemon.stats} columns={columns} skeletonRowsNumber={8} />
           </div>
-        </>
+        </div>
       ) : (
         <PokemonDetailSkeleton />
       )}
