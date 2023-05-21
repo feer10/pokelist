@@ -1,0 +1,57 @@
+.pokemon-card {
+  background: $bg-light-1;
+  border-radius: $radius-1;
+  color: $bg-dark-3;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column;
+  transition: all .5s;
+  width: 200px;
+
+  &:hover:not(.skeleton) {
+    background: $bg-dark-3;
+    color: $bg-light-1;
+  }
+
+  &__top {
+    align-items: center;
+    background: $bg-light-2;
+    border-radius: $radius-1 $radius-1 0 0;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+  }
+  
+  &__image {
+    height: 150px;
+    object-fit: contain;
+  }
+
+  &__title {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    padding: 0 12px;
+
+    &-name {
+      text-transform: capitalize;
+    }
+  }
+
+  &__types {
+    display: flex;
+    flex-flow: row;
+    padding: 0 12px;
+  
+    &-type {
+      border-radius: $radius-1;
+      font-size: 14px;
+      margin-right: 6px;
+      min-width: 40px;
+      padding: 4px 5px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+  }
+}

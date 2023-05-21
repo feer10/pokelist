@@ -1,0 +1,10 @@
+.table-wrapper {
+  margin: 20px auto 40px;
+  width: 550px;
+
+  .custom-table {
+    td {
+      text-transform: capitalize;
+    }
+  }
+}

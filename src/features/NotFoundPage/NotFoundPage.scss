@@ -1,0 +1,16 @@
+.not-found {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  font-size: 26px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 40px;
+  max-width: 1200px;
+  width: 100%;
+
+  &__button {
+    margin-top: 40px;
+  }
+}

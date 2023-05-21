@@ -1,0 +1,42 @@
+.pokemon-list {
+  align-self: center;
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 20px;
+  max-width: 850px;
+  padding: 20px;
+  width: 100%;
+
+  &__switch-view {
+    align-self: flex-end;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  &__wrapper {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(
+        200px,
+        1fr
+      )
+    );
+  }
+
+  .custom-table td {
+    text-transform: capitalize;
+  }
+}
+
+.current-page {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px auto 20px;
+  width: max-content;
+}

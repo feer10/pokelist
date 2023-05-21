@@ -1,0 +1,25 @@
+.header {
+  align-items: center;
+  background-color: $bg-dark-2;
+  box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -2px #0000000d;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  height: 3rem;
+  justify-content: center;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+
+  &__logo {
+    height: 100%;
+
+    &-link {
+      height: 100%;
+      object-fit: cover;
+      width: 180px;
+    }
+  }
+}

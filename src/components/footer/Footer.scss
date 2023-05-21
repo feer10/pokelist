@@ -1,0 +1,15 @@
+.footer {
+  align-items: center;
+  background-color: #1f2937;
+  box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -2px #0000000d;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  justify-content: space-between;
+  width: 100%;
+
+  div {
+    padding: 0.5rem 20px;
+  }
+}

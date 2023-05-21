@@ -1,0 +1,22 @@
+.navigation {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px;
+  position: sticky;
+  top: 100px;
+  width: 100%;
+  z-index: 10;
+
+  &__prev, &__next  {
+    &:first-of-type {
+      margin-right: 26px;
+    }
+
+    &:hover {
+      .arrow-icon {
+        filter: invert(1);
+      }
+    }
+  }
+}
